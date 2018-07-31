@@ -25,7 +25,7 @@ export default class LatestMovieReviewsContainer extends React.Component {
     return(
       <div className="latest-movie-reviews">
         <MovieReviews reviews={this.state.reviews} />
-        </div>
+      </div>
     )
   }
 }
