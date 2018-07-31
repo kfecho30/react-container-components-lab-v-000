@@ -8,7 +8,7 @@ export default class MovieReviews extends React.Component{
       <div className="review-list">
         <LatestMovieReviewsContainer />
         <SearchableMovieReviewsContainer />
-        </div>
+      </div>
     )
   }
 }
