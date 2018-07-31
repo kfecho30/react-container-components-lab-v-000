@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default class MovieReviews extends React.Component{
-  render(){
-    return(
-      <div className="review-list">
-      </div>
-    )
-  }
+const Review = ({headline,byline,link}) => {
+  return(
+    <div key={headline} className="review">
+      <a href={link}>{headline} - {byline}</a>
+    </div>
+  )
 }
+
+
+export default MovieReviews;
