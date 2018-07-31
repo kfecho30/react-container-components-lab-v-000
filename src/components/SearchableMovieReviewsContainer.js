@@ -31,7 +31,7 @@ export default class SearchableMovieReviewsContainer extends React.Component {
       <div className="searchable-movie-reviews">
       <form onSubmit={this.handleSubmit}>
         <input type="text" onChange={this.handleChange} />
-        <button type="submit">Submit</button>
+        <input type="submit" />
       </form>
 
       <MovieReviews reviews={this.state.reviews} />
