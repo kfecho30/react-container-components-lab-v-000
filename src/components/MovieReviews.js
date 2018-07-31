@@ -6,8 +6,6 @@ export default class MovieReviews extends React.Component{
   render(){
     return(
       <div className="review-list">
-        <LatestMovieReviewsContainer />
-        <SearchableMovieReviewsContainer />
       </div>
     )
   }
