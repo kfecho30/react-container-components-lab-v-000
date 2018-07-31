@@ -17,7 +17,7 @@ export default class SearchableMovieReviewsContainer extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    fetch(URL)
+    fetch(URL.concat(this.state.searchTerm))
       .then(res => res.json())
       .then(response => this.setState({ reviews: response.results }))
   }
