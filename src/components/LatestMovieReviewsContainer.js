@@ -22,7 +22,7 @@ export default class LatestMovieReviewsContainer extends React.Component {
 
   componentDidMount() {
     fetch(URL)
-      .then(response => response.json())
+      .then(res => res.json())
       .then(reviews => this.setState({ reviews: response.results }))
   }
 
