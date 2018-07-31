@@ -21,9 +21,9 @@ export default class LatestMovieReviewsContainer extends React.Component {
   }
 
   componentDidMount() {
-    fetch('/api/current_user/book_list')
+    fetch(URL)
       .then(response => response.json())
-      .then(books => this.setState({ books }))
+      .then(reviews => this.setState({ books }))
   }
 
   render(){
