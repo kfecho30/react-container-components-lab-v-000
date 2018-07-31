@@ -34,7 +34,6 @@ export default class SearchableMovieReviewsContainer extends React.Component {
         <input
           id='search-input'
           type="text"
-          style={{width: 300}}
           onChange={this.handleChange} />
         <button type="submit">Submit</button>
       </form>
