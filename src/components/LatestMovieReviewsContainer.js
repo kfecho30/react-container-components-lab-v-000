@@ -13,6 +13,12 @@ export default class LatestMovieReviewsContainer extends React.Component {
       reviews:[],
     }
   }
+
+  componentDidMount() {
+    fetch('/api/current_user/book_list')
+      .then(response => response.json())
+      .then(books => this.setState({ books }))
+  }
   render(){
     return(
       <div className="latest-movie-reviews">
