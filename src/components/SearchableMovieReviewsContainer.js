@@ -25,6 +25,10 @@ export default class SearchableMovieReviewsContainer extends React.Component {
     e.preventDefault();
   }
 
+  handleChange = e => {
+    
+  }
+
   render(){
     return(
       <div className="searchable-movie-reviews">
