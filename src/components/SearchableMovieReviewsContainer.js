@@ -30,8 +30,13 @@ export default class SearchableMovieReviewsContainer extends React.Component {
     return(
       <div className="searchable-movie-reviews">
       <form onSubmit={this.handleSubmit}>
-        <input type="text" onChange={this.handleChange}>
-        <input type="submit">
+        <label htmlFor='search-input'>Search Movie Reviews</label>
+        <input
+          id='search-input'
+          type="text"
+          style={{width: 300}}
+          onChange={this.handleChange} />
+        <button type="submit">Submit</button>
       </form>
 
       <MovieReviews reviews={this.state.reviews} />
