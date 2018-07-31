@@ -5,8 +5,10 @@ import SearchableMovieReviewsContainer from './LatestMovieReviewsContainer.js';
 export default class MovieReviews extends React.Component{
   render(){
     return(
-      <LatestMovieReviewsContainer />
-      <SearchableMovieReviewsContainer />
+      <div className="review-list">
+        <LatestMovieReviewsContainer />
+        <SearchableMovieReviewsContainer />
+        </div>
     )
   }
 }
