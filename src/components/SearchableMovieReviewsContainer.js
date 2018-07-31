@@ -16,7 +16,7 @@ export default class SearchableMovieReviewsContainer extends React.Component {
   }
   render(){
     return(
-      <div className="latest-movie-reviews">
+      <div className="searchable-movie-reviews">
       </div>
     )
   }
